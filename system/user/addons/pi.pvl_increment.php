@@ -68,11 +68,11 @@ class Pvl_increment
 		static $step;
 		static $increment;
 
-		$ee				= get_instance();
-		$start			= $ee->TMPL->fetch_param('start', 1);
-		$increment_id	= $ee->TMPL->fetch_param('id', 'default_increment');
-		$no_increment	= $ee->TMPL->fetch_param('increment', TRUE);
-		$silent			= $ee->TMPL->fetch_param('silent', 'no');
+		$ee = get_instance();
+		$start = $ee->TMPL->fetch_param('start', 1);
+		$increment_id = $ee->TMPL->fetch_param('id', 'default_increment');
+		$no_increment = $ee->TMPL->fetch_param('increment', TRUE);
+		$silent	= $ee->TMPL->fetch_param('silent', 'no');
 
 		// Init step
 		if (strtolower($no_increment) !== 'no') {
